@@ -1,2 +1,2 @@
-# wind-speed-forecast
-Wind speed forecast using Deep Learning
+# load-forecast
+Load forecast using Deep Learning
