@@ -1,3 +1,4 @@
+![https://s3-us-west-2.amazonaws.com/transmountain-craftcms/images/_1200x630_crop_center-center_82_none/transmission-lines-1030x515.jpg?mtime=1582829191]
 # Energy Load Forecasting Project
 
 ## Overview
