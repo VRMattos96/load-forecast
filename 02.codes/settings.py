@@ -3,3 +3,6 @@ FORECAST_DAYS = 7
 STEPS_PER_DAY = 24
 
 PATH = '/mnt/e/github/load-forecast/03.results/'
+
+WINDOW_LENGHT = ((FORECAST_DAYS)*STEPS_PER_DAY + (STEPS_PER_DAY*INPUT_DAYS))
+
