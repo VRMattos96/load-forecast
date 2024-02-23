@@ -146,54 +146,10 @@ By employing VMD as part of the feature engineering process, we aim to enhance t
 
 1. Shahzad Muzaffar, Afshin Afshari. (2019). "Short-term load forecasts using LSTM networks." *Energy Procedia*, 158, 2922-2927. [DOI](https://doi.org/10.1016/j.egypro.2019.01.540)
 
-   - BibTeX:
-     ```bibtex
-     @article{muzaffar2019short,
-       title={Short-term load forecasts using LSTM networks},
-       author={Muzaffar, Shahzad and Afshari, Afshin},
-       journal={Energy Procedia},
-       volume={158},
-       pages={2922--2927},
-       year={2019},
-       publisher={Elsevier},
-       doi={https://doi.org/10.1016/j.egypro.2019.01.540}
-     }
-     ```
-
 2. Xiao Zhou, Chengxi Liu, Yongjian Luo, Baoying Wu, Nan Dong, Tianying Xiao, Haojun Zhu. (2022). "Wind power forecast based on variational mode decomposition and long short term memory attention network." *Energy Reports*, 8, 922-931. [DOI](https://doi.org/10.1016/j.egyr.2022.08.159)
 
-   - BibTeX:
-     ```bibtex
-     @article{ZHOU2022922,
-       title = {Wind power forecast based on variational mode decomposition and long short term memory attention network},
-       journal = {Energy Reports},
-       volume = {8},
-       pages = {922-931},
-       year = {2022},
-       note = {2022 The 5th International Conference on Electrical Engineering and Green Energy},
-       issn = {2352-4847},
-       doi = {https://doi.org/10.1016/j.egyr.2022.08.159},
-       url = {https://www.sciencedirect.com/science/article/pii/S235248472201602X},
-       author = {Xiao Zhou and Chengxi Liu and Yongjian Luo and Baoying Wu and Nan Dong and Tianying Xiao and Haojun Zhu},
-       keywords = {Attention network, Long short term memory, Variational mode decomposition, Wind power forecast},
-       abstract = {Wind power forecast is becoming more and more important as the ever-increasing penetration of renewable energies brings uncertainties to the power systems. Although the numerical weather prediction (NWP) has already been widely applied on wind power forecast, it involves high computational burden with complex meteorological models, which has great uncertainty in real environment, so machine learning methods are the significant supplement for accurate wind power forecast. This paper proposes a deep learning model to improve the prediction accuracy based on the NWP data. Variational Mode Decomposition (VMD) is applied to extract time-series information. Furthermore, an encoder–decoder structure consisting of a dual attention-long short term memory (LSTM) neural network is constructed to enhance the forecasting accuracy. The comparison between the proposed model and several benchmark models, show the superiority of proposed model in effectively enhancing the prediction performance.}
-     }
-     ```
-     
 3. M. Peixeiro. (2022). "Time Series Forecasting in Python." [Manning](https://books.google.com.br/books?id=hqXczgEACAAJ). ISBN: 9781617299889.
 
-   - BibTeX:
-     ```bibtex
-     @book{peixeiro2022time,
-       title={Time Series Forecasting in Python},
-       author={Peixeiro, M.},
-       isbn={9781617299889},
-       lccn={2022286777},
-       url={https://books.google.com.br/books?id=hqXczgEACAAJ},
-       year={2022},
-       publisher={Manning}
-     }
-     ```
 ### Additional Resource
 
 - Introduction to Variational Mode Decomposition (VMD) by Vamsi Varma. [Medium Article](https://vamsivk1995.medium.com/introduction-to-variational-mode-decomposition-vmd-d7100210a56a)
