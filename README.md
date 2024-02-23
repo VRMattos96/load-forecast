@@ -42,7 +42,7 @@ The project is organized as following:
 ```
 load-forecasting/
 │
-├── 01.data/ # Store your dataset and any other data files
+├── 01.data/ # Dataset 
 │ ├── raw/ # Raw data files
 │ ├── processed/ # Processed data files
 ├── 02.codes/ # Source code
@@ -53,6 +53,29 @@ load-forecasting/
 ├── README.md # Project README file
 └── requirements.txt # List of Python dependencies
 ```
+## Data Sources
+
+The dataset used in this project was obtained from two trusted and authoritative sources: the Operador Nacional do Sistema (ONS) and the Instituto Nacional de Meteorologia (INMET), both government institutions in Brazil.
+
+### 1. ONS - Operador Nacional do Sistema
+
+The ONS, or National System Operator, is a key institution responsible for the coordination and operation of the Brazilian power system. The energy load data used in this project was sourced from the ONS platform.
+
+- **Data Source:** [ONS Data Portal](https://dados.ons.org.br/dataset/carga-energia-verificada)
+
+The provided link directs to the ONS Data Portal's dataset containing verified energy load information. The ONS ensures the reliability and accuracy of this data, making it a valuable resource for energy-related analyses and forecasting.
+
+### 2. INMET - Instituto Nacional de Meteorologia
+
+The INMET, or National Institute of Meteorology, is another reputable government institution in Brazil. Meteorological data obtained from INMET complements the energy load dataset, providing additional contextual information that influence energy consumption.
+
+- **Data Source:** [INMET Data Portal](https://bdmep.inmet.gov.br/)
+
+The provided link leads to the INMET Data Portal, where meteorological data can be accessed. This data includes weather conditions, temperature, and other meteorological factors that play a crucial role in understanding energy consumption patterns.
+
+### Data Combination and Preprocessing
+
+To create a comprehensive dataset for energy load forecasting, the ONS energy load data and the meteorological data from INMET were combined and underwent preprocessing steps. This integration enhances the accuracy of the forecasting model by considering both energy-related and meteorological factors.
 
 ## Feature Engineering: Variational Mode Decomposition (VMD)
 
