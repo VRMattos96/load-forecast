@@ -102,7 +102,7 @@ Variational Mode Decomposition is a signal processing technique that decomposes 
 
 The VMD optimization problem is formulated as follows:
 
-![Objective Function](/mnt/e/github/load-forecast/vmd-equation.png)
+![Objective Function](vmd-equation.png)
 
 Where:
 - \( x(t) \) is the original time series.
