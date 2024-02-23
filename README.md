@@ -115,7 +115,7 @@ Where:
 
 The optimization is typically performed using an iterative scheme. The update rules for \( u_k \) and \( \omega_k \) are given by:
 
-![Update Rules](https://latex.codecogs.com/svg.latex?u_k=\frac{\mathcal{H}_\lambda(x-\sum_{j\neq{k}}u_j\cos(\omega_jt+\phi_j))}{\cos(\omega_kt+\phi_k)})
+![Update Rules](https://camo.githubusercontent.com/a8048eb5b4360ae1412da3f9ef26cf0b919e5bc2469d54c661b4339b3b240644/68747470733a2f2f6c617465782e636f6465636f67732e636f6d2f7376672e6c617465783f2535436d696e5f253742755f6b2c2535436f6d6567615f6b25374425354373756d5f2537426b3d312537442535452537424b2537442535436c656674253743782d25354373756d5f2537426b3d312537442535452537424b253744755f6b253543636f73282535436f6d6567615f6b742b2535437068695f6b2925354372696768742537435f32253545322b2535436c616d62646125354373756d5f2537426b3d312537442535452537424b2d312537442537432535436f6d6567615f2537426b2b312537442d2535436f6d6567615f6b2537435f3225354532)
 
 ![Update Rules](https://latex.codecogs.com/svg.latex?\omega_k=\frac{\sum_{t=1}^{T}tu_k\sin(\omega_kt+\phi_k)+\lambda\sum_{k=1}^{K-1}(\omega_{k+1}-2\omega_k+\omega_{k-1})}{\sum_{t=1}^{T}tu_k\cos(\omega_kt+\phi_k)})
 
