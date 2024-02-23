@@ -102,7 +102,7 @@ Variational Mode Decomposition is a signal processing technique that decomposes 
 
 The VMD optimization problem is formulated as follows:
 
-![Objective Function](https://latex.codecogs.com/svg.latex?\min_{u_k,\omega_k}\sum_{k=1}^{K}\left\|x-\sum_{k=1}^{K}u_k\cos(\omega_kt+\phi_k)\right\|_2^2+\lambda\sum_{k=1}^{K-1}\|\omega_{k+1}-\omega_k\|_2^2)
+![Objective Function](/mnt/e/github/load-forecast/vmd-equation.png)
 
 Where:
 - \( x(t) \) is the original time series.
@@ -111,21 +111,9 @@ Where:
 - \( \lambda \) is a regularization parameter.
 - \( K \) is the number of modes.
 
-#### Update Rules:
-
-The optimization is typically performed using an iterative scheme. The update rules for \( u_k \) and \( \omega_k \) are given by:
-
-![Update Rules](https://latex.codecogs.com/svg.latex?u_k=\frac{\mathcal{H}_\lambda(x-\sum_{j\neq{k}}u_j\cos(\omega_jt+\phi_j))}{\cos(\omega_kt+\phi_k)})
-
-![Update Rules](https://latex.codecogs.com/svg.latex?\omega_k=\frac{\sum_{t=1}^{T}tu_k\sin(\omega_kt+\phi_k)+\lambda\sum_{k=1}^{K-1}(\omega_{k+1}-2\omega_k+\omega_{k-1})}{\sum_{t=1}^{T}tu_k\cos(\omega_kt+\phi_k)})
-
 ### Summation to Reconstruct Original Signal
 
-It's important to note that the sum of all decomposed nodes, or intrinsic mode functions (IMFs), obtained through VMD reconstruction, reproduces the original signal. Mathematically, if \(x(t)\) is the original time series and \(c_k(t)\) are the individual IMFs obtained through VMD, the reconstruction is given by:
-
-![Reconstruction](https://latex.codecogs.com/svg.latex?x(t)=\sum_{k=1}^{N}c_k(t))
-
-This property ensures that the information contained in the decomposed modes is exhaustive and can be combined to recreate the original energy load signal.
+It's important to note that the sum of all decomposed nodes, or intrinsic mode functions (IMFs), obtained through VMD reconstruction, reproduces the original signal. This property ensures that the information contained in the decomposed modes is exhaustive and can be combined to recreate the original energy load signal.
 
 
 #### Demonstration:
