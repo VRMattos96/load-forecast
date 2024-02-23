@@ -115,7 +115,7 @@ Where:
 
 The optimization is typically performed using an iterative scheme. The update rules for \( u_k \) and \( \omega_k \) are given by:
 
-![Update Rules](https://camo.githubusercontent.com/a8048eb5b4360ae1412da3f9ef26cf0b919e5bc2469d54c661b4339b3b240644/68747470733a2f2f6c617465782e636f6465636f67732e636f6d2f7376672e6c617465783f2535436d696e5f253742755f6b2c2535436f6d6567615f6b25374425354373756d5f2537426b3d312537442535452537424b2537442535436c656674253743782d25354373756d5f2537426b3d312537442535452537424b253744755f6b253543636f73282535436f6d6567615f6b742b2535437068695f6b2925354372696768742537435f32253545322b2535436c616d62646125354373756d5f2537426b3d312537442535452537424b2d312537442537432535436f6d6567615f2537426b2b312537442d2535436f6d6567615f6b2537435f3225354532)
+![Update Rules](https://latex.codecogs.com/svg.latex?u_k=\frac{\mathcal{H}_\lambda(x-\sum_{j\neq{k}}u_j\cos(\omega_jt+\phi_j))}{\cos(\omega_kt+\phi_k)})
 
 ![Update Rules](https://latex.codecogs.com/svg.latex?\omega_k=\frac{\sum_{t=1}^{T}tu_k\sin(\omega_kt+\phi_k)+\lambda\sum_{k=1}^{K-1}(\omega_{k+1}-2\omega_k+\omega_{k-1})}{\sum_{t=1}^{T}tu_k\cos(\omega_kt+\phi_k)})
 
@@ -140,3 +140,60 @@ This property ensures that the information contained in the decomposed modes is 
 By employing VMD as part of the feature engineering process, we aim to enhance the effectiveness of our forecasting model by capturing and utilizing the inherent patterns present in the energy load time series data.
 
 
+## References
+
+### Papers
+
+1. Shahzad Muzaffar, Afshin Afshari. (2019). "Short-term load forecasts using LSTM networks." *Energy Procedia*, 158, 2922-2927. [DOI](https://doi.org/10.1016/j.egypro.2019.01.540)
+
+   - BibTeX:
+     ```bibtex
+     @article{muzaffar2019short,
+       title={Short-term load forecasts using LSTM networks},
+       author={Muzaffar, Shahzad and Afshari, Afshin},
+       journal={Energy Procedia},
+       volume={158},
+       pages={2922--2927},
+       year={2019},
+       publisher={Elsevier},
+       doi={https://doi.org/10.1016/j.egypro.2019.01.540}
+     }
+     ```
+
+2. Xiao Zhou, Chengxi Liu, Yongjian Luo, Baoying Wu, Nan Dong, Tianying Xiao, Haojun Zhu. (2022). "Wind power forecast based on variational mode decomposition and long short term memory attention network." *Energy Reports*, 8, 922-931. [DOI](https://doi.org/10.1016/j.egyr.2022.08.159)
+
+   - BibTeX:
+     ```bibtex
+     @article{ZHOU2022922,
+       title = {Wind power forecast based on variational mode decomposition and long short term memory attention network},
+       journal = {Energy Reports},
+       volume = {8},
+       pages = {922-931},
+       year = {2022},
+       note = {2022 The 5th International Conference on Electrical Engineering and Green Energy},
+       issn = {2352-4847},
+       doi = {https://doi.org/10.1016/j.egyr.2022.08.159},
+       url = {https://www.sciencedirect.com/science/article/pii/S235248472201602X},
+       author = {Xiao Zhou and Chengxi Liu and Yongjian Luo and Baoying Wu and Nan Dong and Tianying Xiao and Haojun Zhu},
+       keywords = {Attention network, Long short term memory, Variational mode decomposition, Wind power forecast},
+       abstract = {Wind power forecast is becoming more and more important as the ever-increasing penetration of renewable energies brings uncertainties to the power systems. Although the numerical weather prediction (NWP) has already been widely applied on wind power forecast, it involves high computational burden with complex meteorological models, which has great uncertainty in real environment, so machine learning methods are the significant supplement for accurate wind power forecast. This paper proposes a deep learning model to improve the prediction accuracy based on the NWP data. Variational Mode Decomposition (VMD) is applied to extract time-series information. Furthermore, an encoder–decoder structure consisting of a dual attention-long short term memory (LSTM) neural network is constructed to enhance the forecasting accuracy. The comparison between the proposed model and several benchmark models, show the superiority of proposed model in effectively enhancing the prediction performance.}
+     }
+     ```
+     
+3. M. Peixeiro. (2022). "Time Series Forecasting in Python." [Manning](https://books.google.com.br/books?id=hqXczgEACAAJ). ISBN: 9781617299889.
+
+   - BibTeX:
+     ```bibtex
+     @book{peixeiro2022time,
+       title={Time Series Forecasting in Python},
+       author={Peixeiro, M.},
+       isbn={9781617299889},
+       lccn={2022286777},
+       url={https://books.google.com.br/books?id=hqXczgEACAAJ},
+       year={2022},
+       publisher={Manning}
+     }
+     ```
+### Additional Resource
+
+- Introduction to Variational Mode Decomposition (VMD) by Vamsi Varma. [Medium Article](https://vamsivk1995.medium.com/introduction-to-variational-mode-decomposition-vmd-d7100210a56a)
