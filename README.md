@@ -39,20 +39,20 @@ This project focuses on forecasting the Energy Load in Brazil using a combinatio
 ## Project Structure
 
 The project is organized as following:
-
+```
 load-forecasting/
 │
 ├── 01.data/ # Store your dataset and any other data files
-│   ├── raw/ # Raw data files
-│   ├── processed/ # Processed data files
+│ ├── raw/ # Raw data files
+│ ├── processed/ # Processed data files
 ├── 02.codes/ # Source code
-│   ├── data_processing/ # Code for data preprocessing
-│   ├── modelling/ # Implementation of the forecasting model
-│   ├── validation/ # Code for model validation
+│ ├── data_processing/ # Code for data preprocessing
+│ ├── modelling/ # Implementation of the forecasting model
+│ ├── validation/ # Code for model validation
 ├── 03.results/ # Directory for storing results
 ├── README.md # Project README file
 └── requirements.txt # List of Python dependencies
-
+```
 
 ## Feature Engineering: Variational Mode Decomposition (VMD)
 
